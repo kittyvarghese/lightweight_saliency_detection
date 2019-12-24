@@ -132,4 +132,13 @@ You can download dataset from http://saliencydetection.net/duts/#outline-contain
 
 * The step is accumulated step from epoch 0.
 
+# Please cite our work if you find it interesting !!! Till then follow us on T(w)o_Peppy_Papers
+
+@article{varghese2019salite,
+  title={SaLite: A light-weight model for salient object detection},
+  author={Varghese, Kitty and Nag, Sauradip},
+  journal={arXiv preprint arXiv:1912.03641},
+  year={2019}
+}
+
 
