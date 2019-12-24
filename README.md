@@ -1,4 +1,4 @@
-# PiCANet-Implementation
+# SaLite-Implementation
 Pytorch Implementation of [**SaLite :  A light-weight model for salient object detection**](https://arxiv.org/pdf/1912.03641v1.pdf)
 
 <p align="center">
