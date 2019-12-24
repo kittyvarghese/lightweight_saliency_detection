@@ -1,35 +1,9 @@
 # PiCANet-Implementation
-Pytorch Implementation of [**PiCANet: Learning Pixel-wise Contextual Attention for Saliency Detection**](https://arxiv.org/abs/1708.06433)
+Pytorch Implementation of [**SaLite :  A light-weight model for salient object detection**](https://arxiv.org/pdf/1912.03641v1.pdf)
 
-
-## New method on implementing PiCANet
-* [Issue#9](https://github.com/Ugness/PiCANet-Implementation/issues/9)
-* Conv3d version is deleted.
-
-![input image](readme_images/input.png)
-![target_image](readme_images/mask.png)
-* batchsize 1
-![training_result](readme_images/Training_result.JPG)  
-* batchsize 4
-![training_result](readme_images/Training_result_new.JPG)  
-
-# Top 10 Performance Test with F-score (beta-square = 0.3)
-batchsize:4
-* [Issue#9](https://github.com/Ugness/PiCANet-Implementation/issues/9) 
-
-| Step    | Value   | Threshold | MAE     |
-|---------|---------|-----------|---------|
-| 214000  | 0.8520  | 0.6980    | 0.0504  |
-| 259000  | 0.8518  | 0.6510    | 0.0512  |
-| 275000  | 0.8533  | 0.6627    | 0.0536  |
-| 281000  | 0.8540  | 0.7451    | 0.0515  |
-| 307000  | 0.8518  | 0.8078    | 0.0523  |
-| 383000  | 0.8546  | 0.6627    | 0.0532  |
-| 399000  | 0.8561  | 0.7882    | 0.0523  |
-| 400000  | 0.8544  | 0.7804    | 0.0512  |
-| 408000  | 0.8535  | 0.5922    | 0.0550  |
-| 410000  | 0.8518  | 0.7882    | 0.0507  |
-
+<p align="center">
+ <img src="https://github.com/kittyvarghese/lightweight_saliency_detection/blob/master/ARCHI.png">
+</p>
 
 # Execution Guideline
 ## Requirements
@@ -41,14 +15,13 @@ numpy==1.14.2
 
 ## My Environment
 S/W  
-Windows 10  
+UBUNTU 16.04  
 CUDA 9.0  
-cudnn 7.0  
+cudnn 7.5  
 python 3.5  
-H/W  
-AMD Ryzen 1700  
+H/W 
 Nvidia gtx 1080ti  
-32GB RAM
+11GB RAM
 
 ## Execution Guide
 - For training,
@@ -61,9 +34,6 @@ Nvidia gtx 1080ti
                     [--display_freq DISPLAY_FREQ]
     optional arguments:
       -h, --help            show this help message and exit
-      --load LOAD           Directory of pre-trained model, you can download at
-                            https://drive.google.com/file/d/109a0hLftRZ5at5hwpteRfO1A6xLzf8Na/view?usp=sharing
-                            None --> Do not use pre-trained model. Training will start from random initialized model
       --dataset DATASET     Directory of your Dataset
       --cuda CUDA           'cuda' for cuda, 'cpu' for cpu, default = cuda
       --batch_size BATCH_SIZE
@@ -136,8 +106,7 @@ Nvidia gtx 1080ti
 
 
 # Detailed Guideline
-### Pretrained Model
-You can download pre-trained models from https://drive.google.com/drive/folders/1s4M-_SnCPMj_2rsMkSy3pLnLQcgRakAe?usp=sharing  
+
 ## Dataset
 ### PairDataset Class
 * You can use CustomDataset.
@@ -156,3 +125,5 @@ You can download dataset from http://saliencydetection.net/duts/#outline-contain
 </code>
 
 * The step is accumulated step from epoch 0.
+
+
