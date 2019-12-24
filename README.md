@@ -1,3 +1,9 @@
+
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3592434.svg)](https://doi.org/10.5281/zenodo.3592434)
+
+
+
 # SaLite-Implementation
 Pytorch Implementation of [**SaLite :  A light-weight model for salient object detection**](https://arxiv.org/pdf/1912.03641v1.pdf)
 
