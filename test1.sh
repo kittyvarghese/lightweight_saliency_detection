@@ -1,1 +1,0 @@
-python image_test.py --model_dir /home/vplab/Kitty/PiCANet-Implementation/PiCANet\ pretrained/master/36epo_383000step.ckpt --dataset /media/vplab/Kitty/salinet/img --cuda cuda --save_dir /media/vplab/Kitty/salinet/pica
