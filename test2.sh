@@ -1,1 +1,0 @@
-python image_test.py --model_dir /home/vplab/Kitty/Saliency\ Dataset/PiCANet-Implementation/models/state_dict/08151454/3112epo_171200step.ckpt --dataset /media/vplab/Kitty/TestImages/img --cuda cuda --save_dir /media/vplab/Kitty/results_h
